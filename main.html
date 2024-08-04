@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba Técnica para Posición de Desarrollo Web</title>
+  <link rel="icon" href="https://code-fu.net.ni/wp-content/uploads/2016/09/Code-FU.svg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      color: #343a40;
+    }
+    .header-image {
+      background-image: url('https://code-fu.net.ni/wp-content/uploads/2024/02/Background-Home-001.webp');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 60px 0;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+      position: relative;
+    }
+    .header-overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 0.25rem;
+    }
+    .header-content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .header-content img {
+      margin-right: 15px;
+      width: 100px; /* Ajusta el tamaño según sea necesario */
+      height: auto;
+    }
+    .header-text {
+      margin-top: 10px; /* Ajusta este valor según sea necesario */
+    }
+    .card {
+      border: none;
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+    .card-body {
+      padding: 40px;
+    }
+    .card-footer {
+      background-color: #f1f1f1;
+    }
+    .section-title {
+      border-bottom: 2px solid #6c757d;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .list-group-item {
+      border: none;
+      padding-left: 0;
+    }
+    .btn-primary {
+      background-color: #dc4c3e;
+      border-color: #dc4c3e;
+    }
+    .btn-primary:hover {
+      background-color: #b83e32;
+      border-color: #b83e32;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-image text-center">
+    <div class="header-overlay"></div>
+    <div class="header-content">
+      <img src="https://code-fu.net.ni/wp-content/uploads/2016/09/Code-FU.svg" alt="Logo de Code FU">
+      <div class="header-text">
+        <h1 class="display-4">Prueba Técnica de Desarrollo Web</h1>
+        <p class="lead">Programas Code - Fundación Uno</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <div class="card shadow">
+      <div class="card-body">
+        <h2 class="section-title">Descripción de la Prueba</h2>
+        <p class="card-text">
+          La prueba técnica consiste en desarrollar una aplicación CRUD en Laravel con el tema "Recursos Humanos y Nómina". La aplicación debe permitir:
+        </p>
+        <ul class="list-group list-group-flush mb-4">
+          <li class="list-group-item">• Gestión de empleados, incluyendo contratos, roles, y salarios.</li>
+          <!-- <li class="list-group-item">• Cálculo de nóminas con impuestos, deducciones y beneficios.</li> -->
+          <li class="list-group-item">• Control de asistencia y permisos laborales.</li>
+          <!-- <li class="list-group-item">• Cumplimiento de regulaciones laborales y protección de datos personales.</li> -->
+        </ul>
+        
+        <h2 class="section-title">Tecnologías y Herramientas</h2>
+        <ul class="list-group list-group-flush mb-4">
+          <li class="list-group-item">• XAMPP (última versión)</li>
+          <li class="list-group-item">• Node.js v20 (TLS)</li>
+          <li class="list-group-item">• Composer (última versión)</li>
+          <li class="list-group-item">• Framework Laravel</li>
+          <li class="list-group-item">• YajraBox (integración con DataTables)</li>
+        </ul>
+        
+        <h2 class="section-title">Requisitos y Recomendaciones</h2>
+        <p class="card-text">
+          Los aplicantes deben crear una base de datos relacional bien estructurada, junto con los modelos y controladores necesarios para todo el proyecto. Las páginas deben utilizar la extensión .blade.php para el templating en Laravel.
+        </p>
+        <p class="card-text">
+          El diseño del frontend queda completamente a discreción de los aplicantes. Sin embargo, el diseño debe ser limpio y bien organizado.
+        </p>
+        
+        <h2 class="section-title">Flexibilidad del Frontend</h2>
+        <p class="card-text">
+          Los aplicantes tienen la libertad de elegir cualquier patrón de diseño frontend que prefieran, siempre que el resultado sea estéticamente agradable y funcional. El objetivo principal es asegurar que el frontend sea limpio, bien estructurado y que complemente la aplicación en su totalidad.
+        </p>
+
+        <h2 class="section-title">Detalles de la Entrega</h2>
+        <p class="card-text">
+          La prueba se liberará el 5 de agosto de 2024 y deberá ser entregada antes del 7 de agosto de 2024 a las 12 de la noche. Los aplicantes deben crear un repositorio privado en GitHub y agregar como colaborador al usuario <strong>github@code-fu.net.ni</strong> para la revisión del proyecto. Incluya toda la documentación necesaria e instrucciones para ejecutar la aplicación. Asegúrese de listar todas las dependencias claramente.
+        </p>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfR5mnapJ1Iv11PI8SfGC3cu85DVD46ySJF-j1YVvIURxMJvw/viewform?embedded=true" width="100%" height="689" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+          </div>
+          <div class="col-md-6">
+            <h3 class="section-title">Formulario de Contacto</h3>
+            <form id="my-form" action="https://formspree.io/f/mzzpropl" method="POST">
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo electrónico" required>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="message" rows="4" placeholder="Tu mensaje" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" id="my-form-button">Enviar Consulta</button>
+              <p id="my-form-status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted text-center">
+        Publicado el: 5 de agosto de 2024
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          Swal.fire({
+            icon: 'success',
+            title: '¡Enviado!',
+            text: '¡Gracias por tu mensaje!',
+          });
+          form.reset();
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: data["errors"].map(error => error["message"]).join(", "),
+              });
+            } else {
+              Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Hubo un problema al enviar tu formulario',
+              });
+            }
+          });
+        }
+      }).catch(error => {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Hubo un problema al enviar tu formulario',
+        });
+      });
+    }
+    form.addEventListener("submit", handleSubmit);
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
